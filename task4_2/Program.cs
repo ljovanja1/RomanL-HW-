@@ -4,7 +4,7 @@
 // 22 3 9 -> 22
 using System;
 
-namespace task2 {
+namespace task4_2 {
 
     class Program {
 
@@ -29,7 +29,7 @@ namespace task2 {
                         max = third;
                     }
             else {
-                Console.WriteLine("DELETE");
+                Console.WriteLine("DELETED");
             }
             Console.WriteLine(max);
         }
