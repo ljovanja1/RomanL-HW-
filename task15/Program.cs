@@ -6,7 +6,7 @@
 Console.Write("Получаем  число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if (number > 5)// Число делится на 7 БЕЗ остатка
+if (number > 5)
 {
     Console.WriteLine($"Число {number}: - выходной");
 }
