@@ -4,18 +4,18 @@
 // 5 -> 1, 8, 27, 64, 125
 
 
-int start = 1;
+// int start = 1;
 Console.Write("Введиете число ");
-int end = Convert.ToInt32(Console.ReadLine());
-while (start <= end)
-{
-    Console.Write(Math.Pow(start,3)+ " ");
-    start++;
-}
-
 // int end = Convert.ToInt32(Console.ReadLine());
-// for (int i = 1; i <= end; i+=2)
+// while (start <= end)
 // {
-//     Console.Write(Math.Pow(i, 3)+ " ");
+//     Console.Write(Math.Pow(start,3)+ " ");
+//     start++;
 // }
+
+int end = Convert.ToInt32(Console.ReadLine());
+for (int i = 1; i <= end; i+=2)
+{
+    Console.Write(Math.Pow(i, 3)+ " ");
+}
 
