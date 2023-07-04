@@ -5,7 +5,6 @@
 
 Console.Write("Получаем  число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-
 if (number > 5)
 {
     Console.WriteLine($"Число {number}: - выходной");
