@@ -14,8 +14,9 @@ int dep = Convert.ToInt32(Console.ReadLine());
 
 
 int[,,] array3D = new int[rows, col, dep];
-GetMatrix(rows, col, dep);
-PrintMatrix(GetMatrix(rows, col, dep));
+// GetMatrix(rows, col, dep);
+// PrintMatrix(GetMatrix(rows, col, dep));
+PrintMatrix(GetMatrix(array3D));
 
 void PrintMatrix(int[,,] matrix)
 {
@@ -32,9 +33,10 @@ void PrintMatrix(int[,,] matrix)
         } 
     }
 }
-int[,,] GetMatrix(int rows, int col, int dep) 
+// int[,,] GetMatrix(int rows, int col, int dep) 
+int[,,] GetMatrix(int[,,] matrix) 
 {
-    int[,,] matrix = new int[rows, col, dep];
+    // int[,,] matrix = new int[rows, col, dep];
     Random random = new Random();
     for(int i = 0; i < matrix.GetLength(0); i++)
     {
