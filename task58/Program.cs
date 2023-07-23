@@ -10,14 +10,15 @@ Console.WriteLine("Введите кол-во строк");
 int rows = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите кол-во столбцов");
 int columns = Convert.ToInt32(Console.ReadLine());
-
+Console.WriteLine();
+Console.WriteLine("1 матрица ");
 int[,] array = new int[rows, columns];
 int[,] secondArray = new int[rows, columns];
 int[,] resultArray = new int[rows, columns];
 
 GetMatrix(array);
 PrintMatrix(array);
-
+Console.WriteLine();
 Console.WriteLine("2 матрица ");
 
 GetMatrix(secondArray);
@@ -31,7 +32,7 @@ int[,] GetMatrix(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i,j] = new Random().Next(0, 10);
+            array[i,j] = new Random().Next(1, 10);
         }
     }
     return array;
@@ -49,12 +50,12 @@ void PrintMatrix(int[,] array)
     }
 }
 
-
-
+int[,] GetResultMatrix(int[,] resultAarray)
+{
 if (array.GetLength(0) != secondArray.GetLength(1))
 {
     Console.WriteLine(" Нельзя перемножить ");
-    return;
+    return resultAarray;
 }
 for (int i = 0; i < array.GetLength(0); i++)
 {
@@ -67,5 +68,8 @@ for (int i = 0; i < array.GetLength(0); i++)
         }
     }
 }
+return resultAarray;
+}
 Console.WriteLine("Результат: ");
+GetResultMatrix(resultArray);
 PrintMatrix(resultArray);
